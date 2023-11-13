@@ -318,7 +318,22 @@ div{
     font-size: 10px;
     left: 108px;
 }
-.navbar__user__item ul {
+
+.nav-item .subnav{
     position: absolute;
-    background-color: ;
+    opacity: 1;
+    width: 220px;
+    background-color: #fff;
+    margin-top: 5px;
+    display: none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+.nav-item .subnav a{
+    color:black;
+    border-bottom: solid 1px #8a867d69;
+    width: 220px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
 }
