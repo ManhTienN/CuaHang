@@ -79,7 +79,6 @@ div{
 .navbar li{
     display: inline-block;
     font-weight: 700;
-    
 }
 /* .navbar__item{
     max-height: 42px;
@@ -120,6 +119,7 @@ div{
     background-color: #fff;
     margin-top: 5px;
     display: none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 .nav-item .subnav a{
     color:black;
@@ -159,6 +159,7 @@ div{
 }
 .subnav__item__child{
     background-color: whitesmoke;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 .subnav__item__nk{
     position: absolute;
@@ -237,8 +238,8 @@ div{
     color: black;
     border: none;
 }
-.search>ul>li{
-
+.nav-item__search__input:focus{
+    outline: none;
 }
 .nav-item__search button{
     position: absolute;
@@ -249,9 +250,75 @@ div{
     border: none;
     cursor: pointer;
 }
+.nav-item__search button:active{
+    box-shadow: 0px 0px 2px 2px rgb(17, 230, 194);
+}
 .nav-item__search button i{
     font-size: 18px;
     color: #cd9b32;
 }
-.search>ul>li>button:hover i{
+.navbar__user{
+    width: 216px;
+    height: 70px;
+    position: relative;
+}
+.navbar__user ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar__user .navbar__user__item{
+    width: 216px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.navbar__user .navbar__user__item i{
+    font-size: 25px;
+    cursor: pointer;
+}
+.navbar__user ul .navbar__user__item button{
+    background: none;
+    border: none;
+}
+.navbar__user .navbar__user__item .fa-heart:hover{
+    color:red;
+}
+.navbar__user .navbar__user__item .fa-cart-shopping:hover{
+    color: greenyellow;
+}
+.navbar__user .navbar__user__item .fa-user:hover{
+    color:blue;
+}
+.navbar__user ul .heart span{
+    position: absolute;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background:#ff3131;
+    color: #fff;
+    text-align: center;
+    line-height: 17px;
+    border-radius: 17px;
+    top: 13px;
+    font-size: 10px;
+    left: 38px;
+}
+.navbar__user ul .cart span{
+    position: absolute;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background:#ff3131;
+    color: #fff;
+    text-align: center;
+    line-height: 17px;
+    border-radius: 17px;
+    top: 13px;
+    font-size: 10px;
+    left: 108px;
+}
+.navbar__user__item ul {
+    position: absolute;
+    background-color: ;
 }
