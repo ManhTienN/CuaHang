@@ -269,9 +269,9 @@ div{
 .navbar__user .navbar__user__item{
     width: 216px;
     height: 70px;
-    display: flex;
-    align-items: center;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 .navbar__user .navbar__user__item i{
     font-size: 25px;
@@ -292,7 +292,6 @@ div{
 }
 .navbar__user ul .heart span{
     position: absolute;
-    display: inline-block;
     width: 17px;
     height: 17px;
     background:#ff3131;
@@ -302,11 +301,10 @@ div{
     border-radius: 17px;
     top: 13px;
     font-size: 10px;
-    left: 38px;
+    left: 26px;
 }
 .navbar__user ul .cart span{
     position: absolute;
-    display: inline-block;
     width: 17px;
     height: 17px;
     background:#ff3131;
@@ -316,24 +314,48 @@ div{
     border-radius: 17px;
     top: 13px;
     font-size: 10px;
-    left: 108px;
+    left: 30px;
+}
+.active{
+    display: block !important;
+}
+.hidden__login{
+    display: none !important;
+}
+.navbar__user__item ul{
+    display: block;
 }
 
-.nav-item .subnav{
+.subnav__user{
+    top:60px;
+    right: 50px;
+    color:rgba(0, 0, 0, 0.7);
     position: absolute;
     opacity: 1;
-    width: 220px;
+    width: 100px;
+    height: 108px;
     background-color: #fff;
     margin-top: 5px;
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
-.nav-item .subnav a{
+.subnav__user li{
+    padding: 5px;
+    display: flex;
     color:black;
     border-bottom: solid 1px #8a867d69;
-    width: 220px;
+    width: 100px;
     padding-left: 10px;
     font-size: 14px;
     font-weight: 500;
     position: relative;
+    
+}
+.subnav__user li a{
+    color: black;
+}
+.subnav__user li a:hover{
+    color:red;
 }
