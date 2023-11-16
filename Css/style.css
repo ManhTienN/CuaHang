@@ -405,7 +405,7 @@ div{
     border-bottom: 1px solid black;
 }
 .username__lg input{
-    background: url(/Img/m.png) no-repeat 0px 5px;
+    background: url(Img/m.png) no-repeat 0px 5px;
     outline: none;
     height: 20px;
     font-size: 15px;
@@ -426,7 +426,7 @@ div{
     padding:10px 20px;
 }
 .username__pw input{
-    background: url(/Img/l.png) no-repeat 0px 5px;
+    background: url(Img/l.png) no-repeat 0px 5px;
     outline: none;
     height: 20px;
     font-size: 15px;
