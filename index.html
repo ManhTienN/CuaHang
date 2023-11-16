@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Font/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="/Js/activebuttonlogin.js"></script>
+	<script src="/Js/popuplogin.js"></script>
 </head>
 <body>
     <div class="main">
@@ -119,8 +120,8 @@
                                 </li>
                                 <li class="navbar__user__item">
                                     <button id="user__button" class="user"><i class="fa-regular fa-user"></i></button>
-                                    <ul id="user__section" class="subnav__user">
-                                        <li><a href="" class="subnav__user__child">Đăng nhập</a></li>
+                                    <ul id="user__section" class="subnav__user hidden__login">
+                                        <li><a id="loginBtn" class="subnav__user__child">Đăng nhập</a></li>
                                         <li><a href="" class="subnav__user__child">Đăng kí</a></li>
                                         <li><a href="" class="subnav__user__child">Hỗ Trợ</a></li>
                                         <li><a href="" class="subnav__user__child">Giới thiệu</a></li>
@@ -134,6 +135,36 @@
                 </div>
             </div>
         </div>
+		<div id="loginPopup" class="popup">
+			<div class="popup-content">
+			  <span class="close" id="closePopup">&times;</span>
+			  <h1 class="tcen">Đăng nhập</h1>
+			  <form class="form__lg">
+				<div class="username__lg">
+					<input type="text" value="User name" name="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User name';}" size="50">
+				</div>
+				<div class="username__pw">
+					<input type="password" value="Password" name="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" size="50">
+				</div>
+				<div class="remember">
+					<span class="checkbox1">
+						<label for="remember" class="checkbox">
+							<input type="checkbox" name="remember" checked="" id="remember">
+							Remember
+						</label>
+					</span>
+					<div class="forgot">
+						<h6>
+							<a href="" class="forgot__password">Quên mật khẩu</a>
+						</h6>
+					</div>
+				</div>
+				<div class="button__lg">
+					<button type="submit" class="bt__lg font_tnw_16_black">Login</button>
+				</div>
+			  </form>
+			</div>
+		  </div>
     </div>
 </body>
 </html>

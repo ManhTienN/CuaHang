@@ -1,0 +1,36 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#rememberBtn:checked + .remember-label {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+#tickBtn {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+#loginBtn {
+  background-color: #e74c3c;
+  color: #fff;
+}
